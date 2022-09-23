@@ -7,18 +7,18 @@ class UserStepLogsController < ApplicationController
 		@user_step_log = UserStepLog.new
 	end
 
-	def create
-		@user_step_log = UserStepLog.new(user_step_log_params)
-		@user_step_log.save
-		if @user_step_log.save
-			redirect_to user_step_log_path(@user_step_log)
-		else
-			redirect_to action: :new
-	end
+	# def create
+	# 	@user_step_log = UserStepLog.new(user_step_log_params)
+	# 	@user_step_log.save
+	# 	if @user_step_log.save
+	# 		redirect_to user_step_log_path(@user_step_log)
+	# 	else
+	# 		redirect_to action: :new
+	# end
 
-	def show
-		@user_step_log = UserStepLog.find(params[:id])
-	end
+	# def show
+	# 	@user_step_log = UserStepLog.find(params[:id])
+	# end
 
 	private
 		def user_step_log_params

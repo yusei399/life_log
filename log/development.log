@@ -733,3 +733,947 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.5ms | Allocations: 3463)
 
 
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:31:33 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:31:49 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:32:25 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 20377)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 55104)
+Completed 200 OK in 88ms (Views: 53.9ms | ActiveRecord: 8.4ms | Allocations: 61417)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:32:44 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:48:43 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:53:48 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:53:55 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:53:57 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 117.3ms | Allocations: 21462)
+  Rendered layout layouts/application.html.erb (Duration: 117.5ms | Allocations: 21529)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 76.2ms | Allocations: 27808)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/users/sign_in" for ::1 at 2022-09-23 20:54:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms | Allocations: 3406)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:54:09 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2205)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2272)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 2493)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/users/sign_up" for ::1 at 2022-09-23 20:54:11 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms | Allocations: 1473)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:54:11 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2197)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2264)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 2484)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/" for ::1 at 2022-09-23 20:54:22 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 22462)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 22536)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.6ms | Allocations: 30476)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/" for ::1 at 2022-09-23 20:54:34 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2211)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2279)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms | Allocations: 2504)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/" for ::1 at 2022-09-23 20:54:53 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1258)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 35718)
+Completed 200 OK in 74ms (Views: 68.7ms | ActiveRecord: 0.9ms | Allocations: 36660)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:54:55 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:54:58 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1004)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3218)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.6ms | Allocations: 3464)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-09-23 20:55:01 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.7ms | Allocations: 4689)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:55:01 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 351)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2568)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2816)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-23 20:55:05 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 235)
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 649)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 4262)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 6460)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 7702)
+
+
+Started POST "/users" for ::1 at 2022-09-23 20:55:09 +0900
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 1016)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3727)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5914)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 8035)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-23 20:55:10 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 390)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2319)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4525)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 5636)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-23 20:55:15 +0900
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"yusei2021@keio.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'yusei2021@keio.jp' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 294ms (ActiveRecord: 0.6ms | Allocations: 3320)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:55:15 +0900
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 994)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3204)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 3501)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:55:24 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:55:27 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1000)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3212)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.8ms | Allocations: 3456)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:55:35 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:55:36 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 996)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3208)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 3.5ms | Allocations: 3452)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:56:14 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 2452)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 2519)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.2ms | Allocations: 3423)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/users/sign_in" for ::1 at 2022-09-23 20:56:32 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 2.8ms | Allocations: 1375)
+
+
+Started GET "/" for ::1 at 2022-09-23 20:56:32 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1241)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3670)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.5ms | Allocations: 4598)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 20:56:33 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 20:56:36 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 996)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3208)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.8ms | Allocations: 3454)
+
+
+Started GET "/" for ::1 at 2022-09-23 21:10:57 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 20717)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 55307)
+Completed 200 OK in 65ms (Views: 55.9ms | ActiveRecord: 2.1ms | Allocations: 63277)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:10:58 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:11:01 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1081)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 3280)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.5ms | Allocations: 3529)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-09-23 21:12:53 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 1.3ms | Allocations: 4595)
+
+
+Started GET "/" for ::1 at 2022-09-23 21:12:53 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 394)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2613)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2860)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-23 21:12:55 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 829)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4100)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6304)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 7553)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-23 21:13:05 +0900
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"yusei2021@keio.jp", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'yusei2021@keio.jp' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 295ms (ActiveRecord: 0.7ms | Allocations: 3531)
+
+
+Started GET "/" for ::1 at 2022-09-23 21:13:05 +0900
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1057)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3268)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 3565)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:13:07 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:15:05 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 47.2ms | Allocations: 25718)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 25792)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 5.4ms | Allocations: 33732)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_step_log_index' for #<ActionView::Base:0x0000000000d3e0>
+Did you mean?  user_step_log_index_url
+               user_step_log_index_path
+               user_step_log_url
+               user_step_log_path):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_index %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/" for ::1 at 2022-09-23 21:15:32 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 2523)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2591)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.3ms | Allocations: 3500)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"user_step_log"}, missing required keys: [:id]
+Did you mean?  user_step_log_url):
+    4: 	<h2> <%= current_user.name %> さんがログインしています </h2>
+    5: 	<h4> メールアドレス： <%= current_user.email %> </h4>
+    6: 	<%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    7: 	<h4><%= link_to "Life_Log", user_step_log_path %></h4>
+    8: <% else %>
+    9: 	<h2> 現在ログインしていません </h2>
+   10: 	<%= link_to "ログイン", new_user_session_path, class: 'post' %> 
+  
+app/views/users/index.html.erb:7
+Started GET "/" for ::1 at 2022-09-23 21:15:53 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1311)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 35965)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.5ms | Allocations: 36907)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:16:10 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:23:13 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 20711)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 55348)
+Completed 200 OK in 87ms (Views: 53.4ms | ActiveRecord: 6.6ms | Allocations: 63343)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:23:14 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/my_threads/new" for ::1 at 2022-09-23 21:29:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/my_threads/new"):
+  
+Started GET "/my_threads/new" for ::1 at 2022-09-23 21:29:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/my_threads/new"):
+  
+Started GET "/" for ::1 at 2022-09-23 21:29:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 20743)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 55380)
+Completed 200 OK in 72ms (Views: 50.0ms | ActiveRecord: 10.5ms | Allocations: 63350)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:29:52 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:32:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE DATABASE `life_log_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE DATABASE `life_log_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT GET_LOCK('1304232362479198110', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1304232362479198110')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:36:36 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:36:42 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 20475)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 55074)
+Completed 200 OK in 73ms (Views: 56.9ms | ActiveRecord: 7.7ms | Allocations: 61384)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:36:43 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:40:25 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 20729)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 55411)
+Completed 200 OK in 59ms (Views: 47.2ms | ActiveRecord: 4.3ms | Allocations: 63381)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:40:26 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/" for ::1 at 2022-09-23 21:40:28 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1065)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3264)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.6ms | Allocations: 3513)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:41:09 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/rails/info/routes?path=x" for ::1 at 2022-09-23 21:41:30 +0900
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"x"}
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 2726)
+
+
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:43:14 +0900
+  
+ActionController::RoutingError (uninitialized constant UserStepLogController
+Did you mean?  UserStepLogsController
+               UsersController):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:46:12 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_step_log/new"):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:46:34 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_step_log/new"):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:47:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_step_log/new"):
+  
+Started GET "/user_step_log/new" for ::1 at 2022-09-23 21:48:51 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/user_step_log/new"):
+  
+Started GET "/" for ::1 at 2022-09-23 21:48:57 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 20470)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 55194)
+Completed 200 OK in 77ms (Views: 49.0ms | ActiveRecord: 19.5ms | Allocations: 61506)
+
+
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:48:59 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1148)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3354)
+Completed 200 OK in 31ms (Views: 8.4ms | ActiveRecord: 1.4ms | Allocations: 18368)
+
+
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:49:03 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2816)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3086)
+
+
+Started POST "/user_step_logs" for ::1 at 2022-09-23 21:49:07 +0900
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UserStepLogsController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:49:07 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3081)
+
+
+Started GET "/user_step_log" for ::1 at 2022-09-23 21:49:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_step_log"):
+  
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:49:12 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 640)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2850)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3111)
+
+
+Started POST "/user_step_logs" for ::1 at 2022-09-23 21:49:35 +0900
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UserStepLogsController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:49:35 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3263)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4161)
+
+
+Started POST "/user_step_logs" for ::1 at 2022-09-23 21:49:38 +0900
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UserStepLogsController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/user_step_logs/new" for ::1 at 2022-09-23 21:49:39 +0900
+Processing by UserStepLogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/new.html.erb within layouts/application
+  Rendered user_step_logs/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 622)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2817)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3077)
+
+
+Started GET "/user_step_logs" for ::1 at 2022-09-23 21:49:39 +0900
+Processing by UserStepLogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_step_logs/index.html.erb within layouts/application
+  Rendered user_step_logs/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 2555)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 2892)
+
+
+Started GET "/" for ::1 at 2022-09-23 21:49:42 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3513)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 1.8ms | Allocations: 4269)
+
+
