@@ -138,3 +138,44 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5849)
 
 
+Started GET "/users/sign_up" for ::1 at 2022-09-22 14:29:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 239)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 655)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 6517)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 41260)
+Completed 200 OK in 57ms (Views: 40.3ms | ActiveRecord: 3.0ms | Allocations: 64272)
+
+
+Started GET "/" for ::1 at 2022-09-22 15:20:09 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 566)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 5303)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-22 15:20:15 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 836)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6140)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 40295)
+Completed 200 OK in 69ms (Views: 40.4ms | ActiveRecord: 8.1ms | Allocations: 59464)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-09-22 15:20:19 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 235)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 213)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2490)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4687)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 5853)
+
+

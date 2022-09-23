@@ -1,0 +1,2 @@
+class UserStepLogsController < ApplicationController
+end
