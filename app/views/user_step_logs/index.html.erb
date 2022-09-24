@@ -1,3 +1,13 @@
 <span>
 	投稿一覧
 </span>
+<% if user_signed_in? %>
+	<%= button_to "投稿", {controller: 'user_step_logs', action: 'new'}, {method: :get} %>
+<% end %>
+<% @user_step_logs.each do |log|%>
+	<h5>steps : <%= log.steps %></h5>
+	<h5>favorite : <%= log.favorite %></h5>
+	<span><%= link_to "編集", "user_step_logs/#{log.id}/edit" %></span><br>
+	<span><%= link_to "詳細", "user_step_logs/#{log.id}" %></span><br>
+	<br>
+<%end%>
