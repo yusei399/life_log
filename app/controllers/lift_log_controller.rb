@@ -1,0 +1,2 @@
+class LiftLogController < ApplicationController
+end
