@@ -9,7 +9,6 @@ class UserStepLogsController < ApplicationController
 
 	def create
 		@user_step_log = UserStepLog.new(user_step_log_params)
-		@user_step_log.save
 		if @user_step_log.save
 			redirect_to user_step_log_path(@user_step_log)
 		else
@@ -37,7 +36,6 @@ class UserStepLogsController < ApplicationController
 
 	def destroy
 		@user_step_log = UserStepLog.find(params[:id])
-		@user_step_log.destroy
 		if @user_step_log.destroy
 			redirect_to user_step_logs_path
 		end
