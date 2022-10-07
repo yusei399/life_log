@@ -1,0 +1,18 @@
+<span>
+    <%= link_to "投稿一覧", '/user_step_logs' %>
+</span>
+
+<h3>タイトル</h3>
+<%= @user_step_log.steps %><br>
+
+<h3>本文</h3>
+<%= @user_step_log.favorite %>
+
+<%= form_with(model:[@user_step_log], url: user_step_log_path(@user_step_log)) do |f| %>
+    <p>
+        <%= f.text_field :steps, placeholder: 'steps' %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
