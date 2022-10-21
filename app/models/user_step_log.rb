@@ -1,5 +1,8 @@
 class UserStepLog < ApplicationRecord
-	belong_to :user
-	has_many :favorites
-	has_many :favorite_users, through: :favorites, source: user
+	belongs_to :user
+	has_many :favorites, dependent: :destroy
+	has_many :favorite_users, through: :favorites
+	def favorited_by?(user)
+		favorites.exists?(user_id: user.id)
+	end
 end

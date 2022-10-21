@@ -6,7 +6,6 @@
 <% end %>
 <% @user_step_logs.each do |log|%>
 	<h5>steps : <%= log.steps %></h5>
-	<h5>favorite : <%= log.favorite %></h5>
 	<span><%= link_to "編集", "user_step_logs/#{log.id}/edit" %></span><br>
 	<span><%= link_to "詳細", "user_step_logs/#{log.id}" %></span><br>
 	<br>

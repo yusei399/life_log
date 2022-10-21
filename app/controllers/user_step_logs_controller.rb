@@ -31,6 +31,7 @@ class UserStepLogsController < ApplicationController
 
 	def show
 		@user_step_log = UserStepLog.find(params[:id])
+		@favorite = Favorite.new
 	end
 
 
@@ -43,6 +44,6 @@ class UserStepLogsController < ApplicationController
 
 	private
 		def user_step_log_params
-			params.require(:user_step_log).permit(:steps, :favorite).merge({ user_id: session[:user_id] })
+			params.require(:user_step_log).permit(:steps).merge({ user_id: current_user.id })
 		end
 	end
