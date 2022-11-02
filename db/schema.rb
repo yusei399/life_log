@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_14_012147) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_23_164521) do
   create_table "favorites", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "user_step_log_id", null: false
     t.bigint "user_id", null: false
@@ -18,6 +18,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_012147) do
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_favorites_on_user_id"
     t.index ["user_step_log_id"], name: "index_favorites_on_user_step_log_id"
+  end
+
+  create_table "group_users", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "group_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_group_users_on_group_id"
+    t.index ["user_id"], name: "index_group_users_on_user_id"
+  end
+
+  create_table "groups", charset: "utf8mb4", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name", null: false
+    t.bigint "owner_id", null: false
+    t.index ["name"], name: "index_groups_on_name", unique: true
+    t.index ["owner_id"], name: "fk_rails_5447bdb9c5"
   end
 
   create_table "user_step_logs", charset: "utf8mb4", force: :cascade do |t|
@@ -43,5 +61,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_012147) do
 
   add_foreign_key "favorites", "user_step_logs"
   add_foreign_key "favorites", "users"
+  add_foreign_key "group_users", "groups"
+  add_foreign_key "group_users", "users"
+  add_foreign_key "groups", "users", column: "owner_id"
   add_foreign_key "user_step_logs", "users"
 end

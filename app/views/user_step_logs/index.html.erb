@@ -3,6 +3,7 @@
 </span>
 <% if user_signed_in? %>
 	<%= button_to "投稿", {controller: 'user_step_logs', action: 'new'}, {method: :get} %>
+	<div><%=link_to "グループを作成する", new_group_path %> </div>
 <% end %>
 <% @user_step_logs.each do |log|%>
 	<h5>steps : <%= log.steps %></h5>
