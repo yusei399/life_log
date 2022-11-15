@@ -1,4 +1,5 @@
 class UserStepLogsController < ApplicationController
+	
 	def index
 		@user_step_logs = UserStepLog.all
 	end

@@ -1,0 +1,41 @@
+.function{
+	display: flex;
+	margin: 5%;
+}
+
+
+.user_step_log_title{
+	position: absolute;          /* 位置指定 */
+    padding: 10px;               /* 余白指定 */
+    top:  0;                     /* 位置指定 */                 /* 位置指定 */
+    left:  0;                    /* 位置指定 */
+    right:  0;                   /* 位置指定 */
+    margin:  auto;               /* 中央寄せ */
+    width:  100%;               /* 幅指定 */
+	height: 20px;
+	text-align: center;
+	border-bottom: 3px solid black;
+}
+
+.tweet{
+	background-color: aqua;
+}
+
+.search{
+	position: absolute;
+	margin-left: 30%;
+}
+
+.create-group{
+	text-decoration: none;
+	color: black;
+	font-size: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.group-index{
+	text-decoration: none;
+	color: black;
+	font-size: 5px;
+}

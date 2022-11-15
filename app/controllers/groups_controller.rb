@@ -28,6 +28,7 @@ class GroupsController < ApplicationController
 			print("--------\n")
 			print("失敗")
 			print("--------\n")
+			flash.now[:alert] = "既に使用されている名前です"
 			render 'new'
 		end
 	end
