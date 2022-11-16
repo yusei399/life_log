@@ -39,3 +39,17 @@
 	color: black;
 	font-size: 5px;
 }
+
+.content{
+	text-align: center;
+} 
+
+.link{
+	display: flex;
+	margin-left: 47%;
+}
+
+.hensyu{
+	margin-right: 20px;
+}
+
