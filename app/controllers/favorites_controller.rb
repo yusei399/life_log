@@ -2,8 +2,10 @@ class FavoritesController < ApplicationController
   def create
     @user_step_log = UserStepLog.find(params[:user_step_log_id])
     @favorite = current_user.favorites.new(user_step_log_id: params[:user_step_log_id])
-    @favorite.save
-    redirect_to user_step_log_path(@user_step_log)
+    if @favorite.save
+      redirect_to user_step_log_path(@user_step_log)
+    else
+      flash[:alert] = '失敗しました'
   end
 
   def destroy
