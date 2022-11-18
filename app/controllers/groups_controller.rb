@@ -23,7 +23,7 @@ class GroupsController < ApplicationController
     if @group.save
       redirect_to group_path(@group) and return
     else
-      flash.now[:alert] = '既に使用されている名前です'
+      flash.now[:alert] = '作成に失敗しました'
       render 'new'
     end
   end
