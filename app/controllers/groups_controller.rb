@@ -8,7 +8,6 @@ class GroupsController < ApplicationController
   end
 
   def show
-    # binding.irb
     @user_step_log = UserStepLog.new
     @group = Group.find(params[:id])
   end
@@ -23,11 +22,7 @@ class GroupsController < ApplicationController
 
     if @group.save
       redirect_to group_path(@group) and return
-      # binding.irb
     else
-      print("--------\n")
-      print('失敗')
-      print("--------\n")
       flash.now[:alert] = '既に使用されている名前です'
       render 'new'
     end
