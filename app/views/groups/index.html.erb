@@ -1,0 +1,10 @@
+<span>
+  "グループ一覧"
+</span>
+
+<% @groups.each do |g|%>
+  <h6><%= g.name %></h6>
+<%end%>
+
+<div><%=link_to "グループを作成する", new_group_path %> </div>
+

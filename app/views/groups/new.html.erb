@@ -1,0 +1,8 @@
+<div class="chat-group-form">
+	<h5><%= "新規チャットグループ" %></h5>
+		<div class="form">
+			<%= render partial: 'form', locals: { group: @group } %>
+		</div>
+</div>
+
+<%= flash[:alert] %>
