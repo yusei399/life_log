@@ -6,6 +6,7 @@ class FavoritesController < ApplicationController
       redirect_to user_step_log_path(@user_step_log)
     else
       flash[:alert] = '失敗しました'
+    end
   end
 
   def destroy
