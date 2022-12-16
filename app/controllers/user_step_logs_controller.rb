@@ -22,6 +22,7 @@ class UserStepLogsController < ApplicationController
 
   def update
     @user_step_log = UserStepLog.find(params[:id])
+    redirect_to action: :new  and return if @user_step_log.user_id != current_user.id
     if @user_step_log.update(user_step_log_params)
       redirect_to user_step_log_path(@user_step_log.id)
     else
