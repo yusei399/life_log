@@ -34,7 +34,6 @@ class UserStepLogsController < ApplicationController
     @user_step_log = UserStepLog.find(params[:id])
     @favorite = Favorite.new
   end
-
   def destroy
     @user_step_log = UserStepLog.find(params[:id])
     return unless @user_step_log.destroy
