@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+group :development do
+  gem 'spring-commands-rspec'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
 end
