@@ -3,7 +3,11 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
     it "is valid with a first name, last name, email, and password"
     # 名がなければ無効な状態であること
-    it "is invalid without a first name"  
+    it "is invalid without a first name" do
+      user = User.new(first_name: nil)
+      user.valid?
+      expect(user.errors[:first_name]).to include("can't be blank")
+    end
     # 姓がなければ無効な状態であること
     it "is invalid without a last name"
     # メールアドレスがなければ無効な状態であること
