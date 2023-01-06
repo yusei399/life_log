@@ -22,7 +22,7 @@ RSpec.describe "User", type: :request do
 			expect {
 			post projects_path, params: { project: project_params }
 			}.to_not change(@user.projects, :count)
-		  end
+			end
 		end
-	  end
+		end
 	end
